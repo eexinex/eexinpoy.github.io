@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #f06292;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f06292;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ec407a;
+}
+
+#gallery {
+    margin: 20px;
+}
+
+#gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+#gallery img.show {
+    opacity: 1;
+}
+
+#image-description {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #f06292;
+}
+
+.lyrics-container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #f06292;
+    z-index: 10;
+    overflow: hidden;
+    height: 50px;
+}
+
+.lyric {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.lyric.show {
+    opacity: 1;
+}
